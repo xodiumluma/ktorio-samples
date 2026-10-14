@@ -25,3 +25,18 @@ repositories {
     url = uri("https://redirector.kotlinlang.org/maven/ktor-eap")
   }
 }
+
+dependencies {
+  implementation("io.ktor:ktor-server-core-jvm")
+  implementation("io.ktor:ktor-server-config-yaml-jvm")
+  implementation("org.jetbrains.exposed:exposed-core:$exposed_version")
+  implementation("org.jetbrains.exposed:exposed-dao:$exposed_version")
+  implementation("org.jetbrains.exposed:exposed-jdbc:$exposed_version")
+  implementation("com.h2database:h2:$h2_version")
+  implementation("io.ktor:ktor-server-netty-jvm")
+  implementation("io.ktor:ktor-server-freemarker")
+  implementation("ch.qos.logback:logback-classic:$logback_version")
+  implementation("io.ktor:ktor-server-status-pages")
+  testImplementation("io.ktor:ktor-server-test-host-jvm")
+  testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
+}
